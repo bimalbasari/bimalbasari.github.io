@@ -1,0 +1,64 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    grid-template-rows: repeat(auto);
+    justify-content: space-around;
+    align-items: center;
+    grid-row-gap:1rem;
+    grid-column-gap:1rem;
+}
+/* Headding column span */
+header{
+
+    grid-column: 1/5;
+    /* grid-row:inherit;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; */
+
+}
+
+/* Navigation column span */
+nav{
+    grid-column: 1/5;
+    /* grid-row:inherit; */
+
+}
+/* Navigation icon position */
+nav > ul{
+    /* display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-wrap: nowrap; */
+}
+/* Left side Content  row span and column adjust */
+section{
+    grid-column: 1/2;
+    grid-row: 3/5;
+}
+/* middle section  row span and column adjust */
+article{
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+/* right section or user profile card   row span and column adjust */
+aside{
+    grid-column: 4/5;
+    grid-row: 3/5;
+}
+aside{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+aside>.a{
+    font-size: xx-large;
+}
+
+/* footer colunn span */
+footer{
+grid-row: 5/6;
+grid-column:1/5;
+}
