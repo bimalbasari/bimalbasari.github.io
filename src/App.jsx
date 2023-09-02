@@ -23,13 +23,13 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/bimalbasari.github.io">
+    <BrowserRouter >
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
         <Routes >
-          <Route path="/bimalbasari.github.io" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
